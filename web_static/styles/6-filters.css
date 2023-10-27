@@ -38,6 +38,8 @@ button:hover
 .amenities:hover .popover
 {
     opacity: 1;
+    z-index: 1;
+
 }
 .locations
 {
@@ -71,9 +73,12 @@ button:hover
     margin-left: -41px;
     margin-top: 23.2px;
     box-sizing: border-box;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.15s;
+    opacity: 0;
     pointer-events: none;
+    position: relative;
+    z-index: 1;
 }
 
 .popover h2
